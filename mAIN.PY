@@ -52,7 +52,8 @@ async def start(message:types.Message, state:FSMContext):
 @rg.message(States.start_menu)
 async def check_menu_buttons(message:types.Message, state:FSMContext):
     await state.set_state(States.start_fill_form)
-
+def new_function():
+    pass
 
 
 dp.include_router(rg)
